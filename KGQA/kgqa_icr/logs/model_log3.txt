@@ -1,0 +1,51 @@
+2024-04-29 17:14:26.151 | INFO     | __main__:model_test:112 -
+                           precision    recall  f1-score   support
+
+               author_1      0.971     0.971     0.971        35
+               author_2      1.000     1.000     1.000        82
+         author_of_ct_1      0.986     1.000     0.993        71
+         author_of_ct_2      1.000     1.000     1.000        54
+    author_of_dynasty_1      0.972     0.986     0.979        71
+     author_of_female_1      1.000     1.000     1.000        45
+         author_of_fs_1      1.000     1.000     1.000        71
+         author_of_fs_2      1.000     0.982     0.991        55
+      author_of_title_1      0.986     0.986     0.986        74
+         author_of_wc_1      1.000     1.000     1.000        61
+       author_of_work_2      1.000     1.000     1.000        53
+       author_type_fs_1      0.985     1.000     0.993        67
+     author_type_work_1      1.000     1.000     1.000        70
+     author_work_type_1      1.000     1.000     1.000        77
+        cnt_of_author_3      1.000     1.000     1.000        56
+     content_of_title_1      1.000     1.000     1.000        60
+dynasty_author_female_1      1.000     1.000     1.000        75
+    dynasty_of_author_1      1.000     1.000     1.000        85
+    dynasty_of_author_2      1.000     1.000     1.000        77
+    dynasty_of_author_3      1.000     1.000     1.000        80
+        dynasty_of_fs_1      1.000     1.000     1.000        64
+     dynasty_of_title_1      1.000     0.984     0.992        64
+                   fs_1      1.000     1.000     1.000        12
+         fs_of_author_1      1.000     0.982     0.991       109
+        fs_of_dynasty_1      0.983     1.000     0.991        58
+           fs_of_type_1      0.980     0.980     0.980       101
+           fs_of_work_1      0.989     1.000     0.995        92
+     gender_of_author_1      1.000     1.000     1.000       100
+     gender_of_author_2      0.986     1.000     0.993        73
+               max_wc_3      1.000     1.000     1.000        66
+               others_4      0.999     0.998     0.999      1062
+          title_of_fs_1      1.000     1.000     1.000        55
+           type_of_fs_1      1.000     1.000     1.000        37
+         type_of_work_1      1.000     1.000     1.000        76
+         type_of_work_2      1.000     1.000     1.000        59
+    type_work_dynasty_1      1.000     1.000     1.000        74
+         wc_of_author_1      0.978     1.000     0.989        87
+         wc_of_author_3      1.000     1.000     1.000        57
+                 work_1      1.000     0.971     0.985        34
+       work_of_author_1      0.976     0.965     0.970        85
+      work_of_dynasty_1      0.989     1.000     0.994        88
+        work_of_title_1      1.000     1.000     1.000        56
+         work_of_type_1      0.984     0.969     0.977       129
+
+               accuracy                          0.995      3957
+              macro avg      0.995     0.995     0.995      3957
+           weighted avg      0.995     0.995     0.995      3957
+

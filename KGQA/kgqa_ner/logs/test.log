@@ -1,0 +1,204 @@
+2024-04-17 10:22:46.965 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:25:26.385 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:25:26.495 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:25:26.495 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:27:27.109 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:27:27.187 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:27:27.187 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:31:02.029 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:31:02.107 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:31:02.107 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:33:28.178 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:33:28.255 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:33:28.272 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:35:58.689 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:35:58.782 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:35:58.782 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:36:00.210 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 10:51:37.007 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-17 10:51:37.022 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-17 10:51:37.022 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-17 10:55:18.431 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:55:18.510 | INFO     | __main__:<module>:67 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:55:18.510 | INFO     | __main__:<module>:68 - mode: test
+2024-04-17 10:55:19.882 | INFO     | engines.predict:predict_test:60 - test dataset does not exist!

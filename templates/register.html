@@ -1,0 +1,71 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="../static/bootstrap/bootstrap.4.6.min.css">-->
+<!--    <link rel="stylesheet" href="../static/css/init.css">-->
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.4.6.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/init.css') }}">
+<link rel="shortcut icon" href="../static/images/logo.png">
+<title>{% block title %} 系统注册{% endblock %} </title>
+
+{% block head %}
+<script src="../static/jquery/jquery.3.6.min.js"></script>
+<script src="../static/js/register.js"></script>
+
+<style>
+    /*#register {*/
+    /*    background: url("../static/images/bg.jpeg");*/
+    /*    background-position: 100% 100%;*/
+    /*    background-size: 100% auto;*/
+    /*}*/
+</style>
+
+{% endblock%}
+
+{% block body %}
+<div id="register" class="row mt-4">
+    <div class="col">
+        <p id="flash">
+            {{get_flashed_messages()[0]}}
+            <!--            {% for item in get_flashed_messages() %}-->
+            <!--            {{ item }}-->
+            <!--            {% endfor %}-->
+        </p>
+    </div>
+
+    <div class="col">
+        <!--         action="#"  提交给当前页面-->
+        <form method="POST">
+            <div class="form-group">
+                <label class="label" for="exampleInputEmail1">邮箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                       name="email">
+<!--                < bootstrp 起作用。 small id="emailHelp" class="form-text text-muted">我们不会把邮箱用于其他用户</small>-->
+                <div id="emailHelp" class="form-text text-muted">我们不会把邮箱用于其他用户</div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputEmail1">验证码</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="captcha">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="captcha-btn">获取验证码</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputEmail1">用户名</label>
+                <input type="text" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputPassword1">确认密码</label>
+                <input type="password" class="form-control" name="password_confirm">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">立即注册</button>
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+{% endblock%}

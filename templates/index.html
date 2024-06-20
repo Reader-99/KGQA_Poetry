@@ -1,0 +1,115 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/images/logo.png">
+    <title>登录验证</title>
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #container {
+            background: url("../static/images/bg.png");
+            background-position: 100% 100%;
+            background-size: 100% auto;
+        }
+
+        #a {
+            font-size: 20px;
+            /*height: 230px;*/
+            width: 170px;
+            /*display: block;*/
+            margin: 0 auto;
+            /*text-decoration: none;*/
+            padding: 12px 50px;
+            border-radius: 5px;
+            border: 1px solid #8fd1d1;
+            /*//background-color: transparent;*/
+            /*background-color: transparent;*/
+            text-align: center;
+            /*color: #f11a1a;*/
+            cursor: pointer;
+            position: relative;
+            left: 10px;
+            top: 320px;
+        }
+
+        #a:hover {
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+        #b {
+            font-size: 20px;
+            /*height: 230px;*/
+            width: 170px;
+            /*display: block;*/
+            margin: 0 auto;
+            /*text-decoration: none;*/
+            padding: 12px 50px;
+            border-radius: 5px;
+            border: 1px solid #8fd1d1;
+            /*//background-color: transparent;*/
+            /*background-color: transparent;*/
+            text-align: center;
+            /*color: #f11a1a;*/
+            cursor: pointer;
+            position: relative;
+            left: 30px;
+            top: 320px;
+        }
+
+        #b:hover {
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: lighter;
+
+            margin-bottom: 90px;
+        }
+    </style>
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="../static/css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="../static/css/nifty-demo.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="container" class="cls-container">
+
+    <!-- BACKGROUND IMAGE -->
+    <!--===================================================-->
+
+
+    <!-- LOGIN FORM -->
+    <!--===================================================-->
+    <div class="cls-content" style="margin-top:150px ">
+        <div class="mar-ver pad-btm">
+
+            <!--            <p class="text-muted" style="color:white ">基于知识图谱的古诗词问答系统</p>-->
+
+            <div>
+                <a id="a" href="{{ url_for('login')}}">系统登录</a>
+                <a id="b" href="{{ url_for('register')}}">系统注册</a>
+            </div>
+
+
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link" href="{{ url_for('search') }}">登录</a>-->
+            <!--            </li>-->
+            <!--            <li class="nav-item">-->
+            <!--                <a class="nav-link" href="{{ url_for('search') }}">注册</a>-->
+            <!--            </li>-->
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于知识图谱的古诗词问答系统</title>
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../static/images/logo.png">
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="../static/css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="../static/css/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="../static/css/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="../static/css/nifty-demo.min.css" rel="stylesheet">
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+
+
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="../static/css/pace.min.css" rel="stylesheet">
+
+    <script src="../static/js/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="../static/js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="../static/js/nifty.min.js"></script>
+    <script src="../static/js/icons.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+
+
+    <!--=================================================-->
+
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="../static/js/nifty-demo.min.js"></script>
+
+    <style>
+        /*毕设作品显示*/
+        .brand-text {
+            /*font-size:20px;*/
+            text-align: center;
+        }
+    </style>
+
+    <!-- 聊天机器人-->
+    <link rel="icon" type="images/x-icon" href="../static/images/favicon.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/github-dark-dimmed.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/highlight.min.js"></script>
+    <script src="../static/js/marked.min.js"></script>
+    <script src="../static/js/html2canvas.min.js"></script>
+    <script src="../static/js/custom.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="container" class="effect aside-float aside-bright mainnav-lg">
+
+    <!--NAVBAR-->
+    <!--===================================================-->
+    <header id="navbar">
+        <div id="navbar-container" class="boxed">
+
+            <!--Brand logo & name-->
+            <!--================================-->
+            <div class="navbar-header">
+                <a href="{{ url_for('search_poetry') }}" class="navbar-brand">
+                    <img src="../static/images/logo.png" alt="Nifty Logo" class="brand-icon">
+                    <div class="brand-title">
+                        <span class="brand-text">Glimmering</span>
+                    </div>
+                </a>
+            </div>
+            <!--================================-->
+            <!--End brand logo & name-->
+
+
+            <!--Navbar Dropdown-->
+            <!--================================-->
+            <div class="navbar-content clearfix" style="height: 39px">
+                <ul class="nav navbar-top-links pull-left">
+
+                    <!--Navigation toogle button-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <li class="tgl-menu-btn">
+                        <a class="mainnav-toggle" href="#">
+                            <i class="demo-pli-view-list"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-top-links pull-left">
+                    <h4>基于知识图谱的古诗词问答系统</h4>
+                </ul>
+            </div>
+            <!--================================-->
+            <!--End Navbar Dropdown-->
+
+        </div>
+    </header>
+    <!--===================================================-->
+    <!--END NAVBAR-->
+
+    <div class="boxed">
+
+        <!--CONTENT CONTAINER-->
+        <!--===================================================-->
+        <!--        <div class="container">-->
+        <div id="content-container">
+            <div class="row">
+                <div class="box col-xs-12">
+                    <div class="title">
+                        <h2 class="text-center">
+                            <span style="margin-right: 10px;">
+                                <i class="fa fa-optin-monster fa-lg"
+                                   aria-hidden="true"></i>
+                            </span>AI XiaoShi
+                        </h2>
+                    </div>
+
+                    <div class="answer">
+                        <div class="tips">
+                            <div class="text-left" style="font-size: 20px; font-family: 'Microsoft YaHei UI'">
+                                <br>
+                                Hello，我是智能小诗，您可以问我这样一些问题：
+                                <br>
+                                <br>
+                                著名诗人李白是哪个朝代的呢？
+                                <br>
+                                小诗，你知不知道静夜思的作者是谁呢？如果知道的话请告诉我吧。
+                                <br>
+                                在吗，我想知道《登高》这首诗的内容，你发给我吧，小诗？
+                                <br>
+                                我对苏轼的文学影响与其弟子们的文学贡献感兴趣，能否告诉我苏门四学士的身份？
+                                <br>
+                                小诗，可以告诉我《赤壁赋》里一些经典句子吗？
+                                <br>
+                                小诗，我想知道李白写了哪些表达思乡之情的诗，你能帮我查查吗？
+                                <br>
+                                小诗，我被“人间有味是清欢”这句诗深深打动，这是苏轼的创作对吧？
+                                <br>
+                                嗨呀，原来宋代有这么多诗人啊？可是你知道明代的诗人会比宋代的诗人多吗？小诗
+                                <br>
+                                ……
+                            </div>
+                            <!--                            <img src="../static/images/苏轼.jpg" alt="#">-->
+                        </div>
+                        <div id="chatWindow"></div>
+                        <div class="function">
+                            <div class="others">
+                                <div class="left">
+                                    <div class="settings common dropup">
+                                        <a class="dropdown-toggle icon-style" id="dropdownMenu" data-toggle="dropdown"
+                                           aria-haspopup="true" aria-expanded="false" title="设置">
+                                            <i class="fa fa-cogs fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="dropdown-menu" style="padding:0;" onclick="event.stopPropagation()">
+                                            <div class="settings-common">
+                                            <span><i class="fa fa fa-linode fa-lg"
+                                                     aria-hidden="true"></i>&nbsp; 主题</span>
+                                                <select class="form-control ipt-common theme">
+                                                    <option value="light">light</option>
+                                                    <option value="gray">gray</option>
+                                                    <option value="light-red">light-red</option>
+                                                    <option value="light-blue">light-blue</option>
+                                                    <option value="light-purple">light-purple</option>
+                                                    <option value="light-green">light-green</option>
+                                                    <option value="light-yellow">light-yellow</option>
+                                                </select>
+                                            </div>
+                                            <div class="settings-common">
+                                            <span><i class="fa fa-key fa-lg"
+                                                     aria-hidden="true"></i>&nbsp; OpenAI Key</span>
+                                                <input type="text" class="form-control ipt-common api-key"
+                                                       placeholder="可用自己的api key">
+                                            </div>
+                                            <div class="settings-common">
+                                                <span><i class="fa fa-reddit-alien fa-lg" aria-hidden="true"></i>&nbsp; OpenAI 模型</span>
+                                                <select class="form-control ipt-common model">
+                                                    <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                                                    <option value="gpt-4">gpt-4</option>
+                                                </select>
+                                            </div>
+                                            <div class="settings-common">
+                                                <span><i class="fa fa-floppy-o fa-lg" aria-hidden="true"></i>&nbsp; 记录对话内容，刷新不会消失</span>
+                                                <div class="chck-btn">
+                                                    <input id="chck-1" type="checkbox">
+                                                    <label for="chck-1" class="check-trail">
+                                                        <div class="check-handler"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="settings-common">
+                                                <span><i class="fa fa-retweet fa-lg" aria-hidden="true"></i>&nbsp; 开启连续对话，加倍消耗tokens</span>
+                                                <div class="chck-btn">
+                                                    <input id="chck-2" type="checkbox">
+                                                    <label for="chck-2" class="check-trail">
+                                                        <div class="check-handler"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="settings-common">
+                                            <span style="font-size: 14px;">
+                                                <i class="fa fa-qq fa-lg"
+                                                   aria-hidden="true">
+
+                                                </i>&nbsp; 学习交流群</span>
+                                                <span style="font-size: 14px;">QQ群：799160455</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <div class="stop common">
+                                        <a class="icon-style stop-icon" title="停止响应" style="text-decoration: none;"><i
+                                                class="fa fa-stop-circle-o fa-lg" aria-hidden="true"></i> 停止</a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="screenshot common">
+                                        <a class="icon-style" title="截图保存对话"><i class="fa fa-file-image-o fa-lg"
+                                                                                      aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="delete common">
+                                        <a class="icon-style" title="删除历史记录"><i class="fa fa-trash-o fa-lg"
+                                                                                      aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ipt">
+                                <div class="col-xs-12">
+                                    <textarea id="chatInput" class="form-control" rows="1"></textarea>
+                                </div>
+                                <button id="chatBtn" class="btn btn-primary" type="button">发送</button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="foot" style="margin-top: 20px;">
+                        <p class="lead text-center">“人生到处知何似，应似飞鸿踏雪泥”</p>
+                        <p class="lead text-center">
+                            <!--                            <a src="../static/images/苏轼.jpg" target="_blank"><i class="fa fa-link fa-lg"-->
+                            <!--                                                                                           aria-hidden="true"></i>&nbsp;-->
+                            <!--                                联系我</a>-->
+                            <!--                            <a href="https://gitee.com/aniu-666/chat-gpt-website" target="_blank"><i-->
+                            <!--                                    class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp; 项目地址</a>-->
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!--===================================================-->
+        <!--END CONTENT CONTAINER-->
+
+
+        <!--MAIN NAVIGATION-->
+        <!--===================================================-->
+        <nav id="mainnav-container">
+            <div id="mainnav">
+
+                <!--Menu-->
+                <!--================================-->
+                <div id="mainnav-menu-wrap">
+                    <div class="nano">
+                        <div class="nano-content">
+
+                            <ul id="mainnav-menu" class="list-group">
+
+
+                                <!--Category name-->
+                                <li class="list-header"> 知识图谱可视化</li>
+
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="{{ url_for('search_poetry') }}">
+                                        <i class="fa fa-search" style="width:24px"></i>
+                                        <span class="menu-title">
+                                                <strong>检索作者与作品</strong>
+                                            </span>
+                                    </a>
+                                </li>
+
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="{{ url_for('search')}}">
+                                        <i class="fa fa-search" style="width:24px"></i>
+                                        <span class="menu-title">
+                                                    <strong>检索人物关系</strong>
+                                                </span>
+
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('get_relations') }}">
+                                        <i class="fa fa-pie-chart" style="width:24px"></i>
+                                        <span class="menu-title">
+                                                    <strong>红楼梦人物关系全貌</strong>
+                                                </span>
+
+                                    </a>
+
+                                </li>
+                                <!--Menu list item-->
+
+
+                                <li class="list-divider"></li>
+
+                                <!--功能名称-->
+                                <li class="list-header">问答系统</li>
+
+                                <!-- 系统功能菜单栏-->
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="{{ url_for('KGQA_Poetry') }}">
+                                        <i class="fa fa-question-circle" style="width:24px"></i>
+                                        <span class="menu-title">
+                                            <strong>古诗词问答</strong>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url_for('KGQA') }}">
+                                        <i class="fa fa-question-circle" style="width:24px"></i>
+                                        <span class="menu-title">
+                                            <strong>人物关系问答</strong>
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--================================-->
+                <!--End menu-->
+
+            </div>
+        </nav>
+        <!--===================================================-->
+        <!--END MAIN NAVIGATION-->
+
+    </div>
+
+    <!-- FOOTER -->
+    <!--===================================================-->
+    <footer id="footer">
+
+        <p class="pad-lft">Copyright&#0169; 2024 Glimmering &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights Reserved </p>
+
+    </footer>
+    <!--===================================================-->
+    <!-- END FOOTER -->
+
+    <!-- SCROLL PAGE BUTTON -->
+    <!--===================================================-->
+    <button class="scroll-top btn">
+        <i class="pci-chevron chevron-up"></i>
+    </button>
+    <!--===================================================-->
+</div>
+<!--===================================================-->
+<!-- END OF CONTAINER -->
+
+</body>
+
+</html>

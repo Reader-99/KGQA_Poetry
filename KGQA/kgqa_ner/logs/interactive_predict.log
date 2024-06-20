@@ -1,0 +1,1793 @@
+2024-04-17 10:56:53.384 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:56:53.463 | INFO     | __main__:<module>:52 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:56:53.469 | INFO     | __main__:<module>:53 - mode: predict_one
+2024-04-17 10:59:43.937 | INFO     | __main__:<module>:43 - device: cpu
+2024-04-17 10:59:44.039 | INFO     | __main__:<module>:52 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 10:59:44.039 | INFO     | __main__:<module>:53 - mode: predict_one
+2024-04-17 10:59:46.647 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1252.716(ms)
+2024-04-17 10:59:46.678 | INFO     | __main__:<module>:58 - please input a sentence (enter [exit] to exit.)
+2024-04-17 11:00:16.045 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1225.238(ms)
+2024-04-17 11:00:16.095 | INFO     | __main__:<module>:58 - please input a sentence (enter [exit] to exit.)
+2024-04-17 11:01:35.608 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1243.296(ms)
+2024-04-17 11:01:35.648 | INFO     | __main__:<module>:58 - please input a sentence (enter [exit] to exit.)
+2024-04-17 11:02:27.281 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1209.422(ms)
+2024-04-17 11:02:27.328 | INFO     | __main__:<module>:58 - please input a sentence (enter [exit] to exit.)
+2024-04-17 11:04:06.821 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1195.637(ms)
+2024-04-17 11:04:06.852 | INFO     | __main__:<module>:58 - please input a sentence (enter [exit] to exit.)
+2024-04-24 11:31:14.066 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-24 11:31:15.060 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pkl",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-24 11:31:15.060 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-24 11:31:18.119 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1335.064(ms)
+2024-04-24 11:31:18.150 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-24 11:31:30.306 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1270.952(ms)
+2024-04-24 11:31:30.338 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:07:59.095 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:08:20.904 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:08:20.982 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:08:20.998 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:08:54.814 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:08:54.892 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:08:54.907 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:08:57.596 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1364.505(ms)
+2024-04-25 16:08:57.612 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:09:08.308 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1303.561(ms)
+2024-04-25 16:09:08.340 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:10:54.910 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:10:55.005 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.optimizer",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:10:55.005 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:13:31.451 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:13:31.563 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:13:31.563 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:14:00.005 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:14:00.084 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:14:00.084 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:14:54.282 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:14:54.361 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:14:54.361 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:15:41.654 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:15:41.749 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:15:41.749 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:16:27.348 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:16:27.442 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:16:27.442 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:21:33.819 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:21:33.897 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:21:33.913 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:23:11.678 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 16:23:11.756 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 16:23:11.772 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 16:23:14.487 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1349.411(ms)
+2024-04-25 16:23:14.519 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:23:29.687 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1322.844(ms)
+2024-04-25 16:23:29.736 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:24:56.255 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1255.049(ms)
+2024-04-25 16:24:56.276 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:26:06.718 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1294.390(ms)
+2024-04-25 16:26:06.766 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:27:14.488 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1208.010(ms)
+2024-04-25 16:27:14.535 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:28:44.226 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1552.354(ms)
+2024-04-25 16:28:44.275 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:29:55.591 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1377.342(ms)
+2024-04-25 16:29:55.622 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 16:30:09.475 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1309.279(ms)
+2024-04-25 16:30:09.522 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:53:09.102 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-25 23:53:09.212 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-25 23:53:09.212 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-25 23:53:12.140 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1367.610(ms)
+2024-04-25 23:53:12.171 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:53:19.979 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1264.362(ms)
+2024-04-25 23:53:20.025 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:53:32.233 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1276.700(ms)
+2024-04-25 23:53:32.268 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:53:46.509 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1292.480(ms)
+2024-04-25 23:53:46.541 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:54:21.468 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1231.373(ms)
+2024-04-25 23:54:21.500 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:56:24.427 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1263.720(ms)
+2024-04-25 23:56:24.462 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:57:11.782 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1203.166(ms)
+2024-04-25 23:57:11.824 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:57:40.480 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1217.513(ms)
+2024-04-25 23:57:40.524 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:58:01.947 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1243.308(ms)
+2024-04-25 23:58:01.977 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:58:07.708 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1259.648(ms)
+2024-04-25 23:58:07.740 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-25 23:58:40.176 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1257.589(ms)
+2024-04-25 23:58:40.206 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-26 00:02:05.633 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-26 00:02:05.839 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-26 00:02:05.842 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-26 00:02:11.054 | INFO     | engines.predict:predict_one:50 - predict time consumption: 2553.098(ms)
+2024-04-26 00:02:11.119 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-26 00:02:25.600 | INFO     | engines.predict:predict_one:50 - predict time consumption: 2084.380(ms)
+2024-04-26 00:02:25.661 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:22:11.245 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-27 00:22:11.340 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 00:22:11.356 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-27 00:22:14.232 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1393.523(ms)
+2024-04-27 00:22:14.279 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:22:22.554 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1273.792(ms)
+2024-04-27 00:22:22.585 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:22:34.809 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1292.137(ms)
+2024-04-27 00:22:34.844 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:22:54.511 | INFO     | __main__:<module>:44 - device: cpu
+2024-04-27 00:22:54.592 | INFO     | __main__:<module>:54 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 00:22:54.592 | INFO     | __main__:<module>:55 - mode: predict_one
+2024-04-27 00:22:57.310 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1247.076(ms)
+2024-04-27 00:22:57.341 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:23:40.691 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1221.965(ms)
+2024-04-27 00:23:40.716 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:24:46.317 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1250.613(ms)
+2024-04-27 00:24:46.374 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:25:30.320 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1243.869(ms)
+2024-04-27 00:25:30.353 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 00:25:41.839 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1253.606(ms)
+2024-04-27 00:25:41.870 | INFO     | __main__:<module>:60 - please input a sentence (enter [exit] to exit.)
+2024-04-27 09:00:30.496 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:00:30.590 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:00:30.590 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:00:33.414 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1359.731(ms)
+2024-04-27 09:00:33.446 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 09:01:19.215 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:01:19.309 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:01:19.309 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:19:06.657 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:19:06.736 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:19:06.736 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:19:09.459 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1282.881(ms)
+2024-04-27 09:19:09.506 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 09:23:05.096 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:23:05.143 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:23:05.143 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:41:25.029 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:41:25.060 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:41:25.060 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:43:12.491 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:43:12.522 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:43:12.522 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:46:18.819 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:46:18.866 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:46:18.866 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:48:53.156 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:48:53.187 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:48:53.187 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:50:03.016 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:50:03.048 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:50:03.063 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:51:29.415 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:51:29.447 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:51:29.447 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:52:49.011 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:52:49.049 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:52:49.049 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:53:16.933 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:53:16.981 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:53:16.981 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 09:55:16.580 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 09:55:16.611 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 09:55:16.611 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:00:53.542 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:00:53.573 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:00:53.573 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:03:04.108 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:03:04.140 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:03:04.140 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:21:38.502 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:21:38.551 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:21:38.551 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:26:48.469 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:26:48.516 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:26:48.516 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:31:53.621 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:31:53.716 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:31:53.716 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:31:56.497 | INFO     | engines.predict:predict_one:52 - predict time consumption: 1259.974(ms)
+2024-04-27 10:31:56.529 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:34:26.738 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:34:26.831 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:34:26.831 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:35:27.002 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:35:27.115 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:35:27.115 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:35:29.817 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1295.719(ms)
+2024-04-27 10:35:29.849 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:35:42.817 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1261.926(ms)
+2024-04-27 10:35:42.848 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:38:44.899 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:38:44.995 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:38:44.995 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:38:47.596 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1284.905(ms)
+2024-04-27 10:38:47.628 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:50:03.132 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:50:03.236 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:50:03.237 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:50:06.767 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1810.513(ms)
+2024-04-27 10:50:06.812 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:50:23.971 | INFO     | engines.predict:predict_one:50 - predict time consumption: 1255.624(ms)
+2024-04-27 10:50:24.011 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:56:04.941 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:56:05.017 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:56:05.017 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:57:07.029 | INFO     | __main__:<module>:45 - device: cpu
+2024-04-27 10:57:07.108 | INFO     | __main__:<module>:55 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 10:57:07.109 | INFO     | __main__:<module>:56 - mode: predict_one
+2024-04-27 10:57:09.723 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1255.668(ms)
+2024-04-27 10:57:09.754 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 10:57:25.730 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1191.013(ms)
+2024-04-27 10:57:25.761 | INFO     | __main__:<module>:61 - please input a sentence (enter [exit] to exit.)
+2024-04-27 11:04:03.616 | INFO     | __main__:<module>:51 - device: cpu
+2024-04-27 11:04:03.696 | INFO     | __main__:<module>:62 - please input a sentence (enter [exit] to exit.)
+2024-04-27 11:04:11.706 | INFO     | __main__:predict_ner:20 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model.pth",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-27 11:04:11.707 | INFO     | __main__:predict_ner:21 - mode: predict_one
+2024-04-27 11:04:11.707 | INFO     | __main__:predict_ner:22 - 对前端用户输入的问句进行 NER 预测……
+2024-04-27 11:04:14.249 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1195.953(ms)
+2024-04-27 11:04:15.503 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1221.347(ms)
+2024-04-27 11:04:15.566 | INFO     | __main__:<module>:62 - please input a sentence (enter [exit] to exit.)
+2024-04-27 11:11:10.632 | INFO     | __main__:<module>:54 - device: cpu
+2024-04-27 11:11:10.719 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-27 11:11:24.074 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-27 11:11:26.666 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1262.922(ms)
+2024-04-27 11:11:27.937 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1238.760(ms)
+2024-04-27 11:11:27.994 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 02:52:36.386 | INFO     | __main__:<module>:53 - device: cpu
+2024-04-29 02:52:36.478 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 02:54:05.145 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-29 02:54:08.068 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1327.989(ms)
+2024-04-29 02:54:09.261 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1163.130(ms)
+2024-04-29 02:54:09.327 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 02:55:03.338 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-29 02:55:05.803 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1192.224(ms)
+2024-04-29 02:55:07.003 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1171.813(ms)
+2024-04-29 02:55:07.057 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 02:55:28.545 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-29 02:55:31.032 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1229.200(ms)
+2024-04-29 02:55:32.261 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1202.539(ms)
+2024-04-29 02:55:32.320 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 02:56:02.803 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-29 02:56:05.206 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1092.884(ms)
+2024-04-29 02:56:06.347 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1114.773(ms)
+2024-04-29 02:56:06.405 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 13:12:46.144 | INFO     | __main__:<module>:53 - device: cpu
+2024-04-29 13:12:46.239 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 13:12:58.595 | INFO     | __main__:predict_ner:25 - 对前端用户输入的问句进行 NER 预测……
+2024-04-29 13:13:01.571 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1259.431(ms)
+2024-04-29 13:13:02.747 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1139.322(ms)
+2024-04-29 13:13:02.823 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 20:05:07.526 | INFO     | __main__:<module>:53 - device: cpu
+2024-04-29 20:05:07.631 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-29 23:43:54.824 | INFO     | __main__:<module>:53 - device: cpu
+2024-04-29 23:43:54.905 | INFO     | __main__:<module>:65 - please input a sentence (enter [exit] to exit.)
+2024-04-30 00:09:59.186 | INFO     | __main__:<module>:56 - device: cpu
+2024-04-30 00:09:59.280 | INFO     | __main__:<module>:68 - please input a sentence (enter [exit] to exit.)
+2024-04-30 00:10:02.798 | INFO     | __main__:predict_ner:28 - 对前端用户输入的问句进行 NER 预测……
+2024-04-30 00:10:05.417 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1300.282(ms)
+2024-04-30 00:10:06.715 | INFO     | engines.predict:predict_one:51 - predict time consumption: 1270.807(ms)
+2024-04-30 00:10:06.771 | INFO     | __main__:<module>:68 - please input a sentence (enter [exit] to exit.)
+2024-05-02 15:14:00.996 | INFO     | __main__:<module>:54 - device: cpu
+2024-05-02 15:14:01.212 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-02 15:14:19.603 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 10992.716(ms)
+2024-05-02 15:14:19.729 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:27:11.698 | INFO     | __main__:<module>:54 - device: cpu
+2024-05-05 11:27:11.800 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:27:53.574 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1356.419(ms)
+2024-05-05 11:27:53.662 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:28:10.689 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1267.412(ms)
+2024-05-05 11:28:10.748 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:28:21.943 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1231.668(ms)
+2024-05-05 11:28:22.007 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:28:59.334 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1217.623(ms)
+2024-05-05 11:28:59.396 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:29:43.713 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1286.231(ms)
+2024-05-05 11:29:43.772 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)
+2024-05-05 11:30:39.064 | INFO     | engines.predict:predict_one:51 - ner predict time consumption: 1200.792(ms)
+2024-05-05 11:30:39.129 | INFO     | __main__:<module>:66 - please input a sentence (enter [exit] to exit.)

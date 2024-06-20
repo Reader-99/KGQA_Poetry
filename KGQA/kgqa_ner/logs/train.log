@@ -1,0 +1,1776 @@
+2024-04-17 09:28:43.617 | INFO     | __main__:<module>:43 - device: cuda
+2024-04-17 09:28:43.661 | INFO     | __main__:<module>:47 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "data/example_datasets2/test_data.json",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 5,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-17 09:28:43.665 | INFO     | __main__:<module>:49 - mode: train
+2024-04-17 09:28:47.667 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-17 09:28:47.841 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-17 09:28:47.841 | INFO     | engines.train:train:165 - 
+epoch:1/5
+2024-04-17 09:29:22.670 | INFO     | engines.train:train:207 - training_loss:1.167976
+2024-04-17 09:29:54.933 | INFO     | engines.train:train:207 - training_loss:0.793690
+2024-04-17 09:30:27.304 | INFO     | engines.train:train:207 - training_loss:0.646507
+2024-04-17 09:30:59.922 | INFO     | engines.train:train:207 - training_loss:0.561227
+2024-04-17 09:31:32.143 | INFO     | engines.train:train:207 - training_loss:0.504686
+2024-04-17 09:32:04.410 | INFO     | engines.train:train:207 - training_loss:0.461667
+2024-04-17 09:32:36.711 | INFO     | engines.train:train:207 - training_loss:0.432148
+2024-04-17 09:32:44.221 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 09:33:07.107 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9772, recall: 0.9761, f1: 0.9767
+2024-04-17 09:33:07.107 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9668, recall: 0.9117, f1: 0.9385
+2024-04-17 09:33:07.107 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.8900, recall: 0.9189, f1: 0.9042
+2024-04-17 09:33:07.117 | INFO     | engines.train:train:214 - time consumption:4.32(min)
+2024-04-17 09:33:08.377 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-17 09:33:08.378 | INFO     | engines.train:train:237 - aver_loss: 0.4262, f1: 0.9398, best_f1: 0.9398, best_epoch: 1 
+
+2024-04-17 09:33:08.378 | INFO     | engines.train:train:165 - 
+epoch:2/5
+2024-04-17 09:33:40.891 | INFO     | engines.train:train:207 - training_loss:0.160379
+2024-04-17 09:34:13.186 | INFO     | engines.train:train:207 - training_loss:0.160547
+2024-04-17 09:34:45.490 | INFO     | engines.train:train:207 - training_loss:0.161210
+2024-04-17 09:35:17.581 | INFO     | engines.train:train:207 - training_loss:0.158016
+2024-04-17 09:35:49.919 | INFO     | engines.train:train:207 - training_loss:0.157239
+2024-04-17 09:36:22.125 | INFO     | engines.train:train:207 - training_loss:0.158144
+2024-04-17 09:36:54.296 | INFO     | engines.train:train:207 - training_loss:0.156884
+2024-04-17 09:37:01.875 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 09:37:25.201 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9845, recall: 0.9772, f1: 0.9809
+2024-04-17 09:37:25.202 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9395, recall: 0.9454, f1: 0.9424
+2024-04-17 09:37:25.202 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.9392, recall: 0.9005, f1: 0.9195
+2024-04-17 09:37:25.202 | INFO     | engines.train:train:214 - time consumption:4.28(min)
+2024-04-17 09:37:26.702 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-17 09:37:26.702 | INFO     | engines.train:train:237 - aver_loss: 0.1565, f1: 0.9476, best_f1: 0.9476, best_epoch: 2 
+
+2024-04-17 09:37:26.702 | INFO     | engines.train:train:165 - 
+epoch:3/5
+2024-04-17 09:37:59.281 | INFO     | engines.train:train:207 - training_loss:0.101770
+2024-04-17 09:38:31.480 | INFO     | engines.train:train:207 - training_loss:0.098729
+2024-04-17 09:39:03.907 | INFO     | engines.train:train:207 - training_loss:0.101433
+2024-04-17 09:39:36.130 | INFO     | engines.train:train:207 - training_loss:0.105891
+2024-04-17 09:40:08.274 | INFO     | engines.train:train:207 - training_loss:0.106732
+2024-04-17 09:40:40.358 | INFO     | engines.train:train:207 - training_loss:0.107956
+2024-04-17 09:41:12.717 | INFO     | engines.train:train:207 - training_loss:0.108764
+2024-04-17 09:41:20.223 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 09:41:43.131 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9766, recall: 0.9721, f1: 0.9743
+2024-04-17 09:41:43.131 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9461, recall: 0.9526, f1: 0.9493
+2024-04-17 09:41:43.131 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.9369, recall: 0.9223, f1: 0.9295
+2024-04-17 09:41:43.132 | INFO     | engines.train:train:214 - time consumption:4.27(min)
+2024-04-17 09:41:44.611 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-17 09:41:44.612 | INFO     | engines.train:train:237 - aver_loss: 0.1079, f1: 0.9511, best_f1: 0.9511, best_epoch: 3 
+
+2024-04-17 09:41:44.612 | INFO     | engines.train:train:165 - 
+epoch:4/5
+2024-04-17 09:42:17.223 | INFO     | engines.train:train:207 - training_loss:0.067144
+2024-04-17 09:42:49.500 | INFO     | engines.train:train:207 - training_loss:0.068944
+2024-04-17 09:43:21.625 | INFO     | engines.train:train:207 - training_loss:0.069889
+2024-04-17 09:43:53.732 | INFO     | engines.train:train:207 - training_loss:0.074937
+2024-04-17 09:44:26.063 | INFO     | engines.train:train:207 - training_loss:0.079278
+2024-04-17 09:44:58.372 | INFO     | engines.train:train:207 - training_loss:0.081512
+2024-04-17 09:45:30.646 | INFO     | engines.train:train:207 - training_loss:0.081612
+2024-04-17 09:45:38.261 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 09:46:01.450 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9873, recall: 0.9727, f1: 0.9799
+2024-04-17 09:46:01.450 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9417, recall: 0.9498, f1: 0.9458
+2024-04-17 09:46:01.451 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.9284, recall: 0.9126, f1: 0.9204
+2024-04-17 09:46:01.451 | INFO     | engines.train:train:214 - time consumption:4.28(min)
+2024-04-17 09:46:01.451 | INFO     | engines.train:train:237 - aver_loss: 0.0835, f1: 0.9487, best_f1: 0.9511, best_epoch: 3 
+
+2024-04-17 09:46:01.451 | INFO     | engines.train:train:165 - 
+epoch:5/5
+2024-04-17 09:46:34.390 | INFO     | engines.train:train:207 - training_loss:0.075905
+2024-04-17 09:47:06.864 | INFO     | engines.train:train:207 - training_loss:0.069386
+2024-04-17 09:47:39.064 | INFO     | engines.train:train:207 - training_loss:0.066339
+2024-04-17 09:48:11.374 | INFO     | engines.train:train:207 - training_loss:0.064562
+2024-04-17 09:48:43.795 | INFO     | engines.train:train:207 - training_loss:0.064303
+2024-04-17 09:49:15.952 | INFO     | engines.train:train:207 - training_loss:0.064946
+2024-04-17 09:49:48.446 | INFO     | engines.train:train:207 - training_loss:0.066115
+2024-04-17 09:49:56.218 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-17 09:50:19.293 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9842, recall: 0.9567, f1: 0.9703
+2024-04-17 09:50:19.294 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9302, recall: 0.9612, f1: 0.9454
+2024-04-17 09:50:19.294 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.9131, recall: 0.9383, f1: 0.9255
+2024-04-17 09:50:19.305 | INFO     | engines.train:train:214 - time consumption:4.30(min)
+2024-04-17 09:50:19.306 | INFO     | engines.train:train:237 - aver_loss: 0.0663, f1: 0.9471, best_f1: 0.9511, best_epoch: 3 
+
+2024-04-17 09:50:19.306 | INFO     | engines.train:train:247 - overall best f1 is 0.9510648970416126 at 3 epoch
+2024-04-17 09:50:19.306 | INFO     | engines.train:train:248 - total training time consumption: 21.524(min)
+2024-04-25 15:17:16.445 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 15:18:05.990 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 15:18:06.046 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 15:18:06.049 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 15:18:10.779 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-25 15:18:10.792 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-25 15:18:10.793 | INFO     | engines.train:train:165 - 
+epoch:1/20
+2024-04-25 15:33:41.865 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 15:33:41.923 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 20,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 15:33:41.924 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 15:33:45.906 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-25 15:33:45.913 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-25 15:33:45.914 | INFO     | engines.train:train:165 - 
+epoch:1/20
+2024-04-25 15:33:56.335 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.946 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.947 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.947 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.947 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.947 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.947 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:33:57.955 | INFO     | engines.train:train:214 - time consumption:0.20(min)
+2024-04-25 15:33:59.453 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:33:59.454 | INFO     | engines.train:train:237 - aver_loss: 3.3048, f1: 0.0000, best_f1: 0.0000, best_epoch: 1 
+
+2024-04-25 15:33:59.454 | INFO     | engines.train:train:165 - 
+epoch:2/20
+2024-04-25 15:34:07.922 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:34:09.629 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.630 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.631 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.631 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.631 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.631 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:09.638 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:34:11.509 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:34:11.509 | INFO     | engines.train:train:237 - aver_loss: 1.6907, f1: 0.0000, best_f1: 0.0000, best_epoch: 2 
+
+2024-04-25 15:34:11.509 | INFO     | engines.train:train:165 - 
+epoch:3/20
+2024-04-25 15:34:19.944 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.505 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.506 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.506 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.506 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.506 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.506 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:21.514 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:34:23.118 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:34:23.118 | INFO     | engines.train:train:237 - aver_loss: 1.1903, f1: 0.0000, best_f1: 0.0000, best_epoch: 3 
+
+2024-04-25 15:34:23.118 | INFO     | engines.train:train:165 - 
+epoch:4/20
+2024-04-25 15:34:31.368 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:34:33.029 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.029 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.029 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.030 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:33.038 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:34:34.945 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:34:34.945 | INFO     | engines.train:train:237 - aver_loss: 0.9309, f1: 0.0000, best_f1: 0.0000, best_epoch: 4 
+
+2024-04-25 15:34:34.945 | INFO     | engines.train:train:165 - 
+epoch:5/20
+2024-04-25 15:34:43.572 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:34:45.265 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.265 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0204, recall: 0.0213, f1: 0.0208
+2024-04-25 15:34:45.265 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.265 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.266 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:45.275 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:34:46.830 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:34:46.830 | INFO     | engines.train:train:237 - aver_loss: 0.7062, f1: 0.0016, best_f1: 0.0016, best_epoch: 5 
+
+2024-04-25 15:34:46.830 | INFO     | engines.train:train:165 - 
+epoch:6/20
+2024-04-25 15:34:55.176 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:34:56.730 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0035, recall: 0.0069, f1: 0.0046
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0345, recall: 0.0426, f1: 0.0381
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.731 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.732 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.732 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.732 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0526, recall: 0.0556, f1: 0.0541
+2024-04-25 15:34:56.732 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.732 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:34:56.739 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:34:58.301 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:34:58.302 | INFO     | engines.train:train:237 - aver_loss: 0.5186, f1: 0.0074, best_f1: 0.0074, best_epoch: 6 
+
+2024-04-25 15:34:58.302 | INFO     | engines.train:train:165 - 
+epoch:7/20
+2024-04-25 15:35:06.399 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0034, recall: 0.0069, f1: 0.0046
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0545, recall: 0.0638, f1: 0.0588
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.970 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.971 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.971 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.971 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0909, recall: 0.1111, f1: 0.1000
+2024-04-25 15:35:07.971 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.971 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:07.979 | INFO     | engines.train:train:214 - time consumption:0.16(min)
+2024-04-25 15:35:09.806 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:35:09.807 | INFO     | engines.train:train:237 - aver_loss: 0.4009, f1: 0.0126, best_f1: 0.0126, best_epoch: 7 
+
+2024-04-25 15:35:09.807 | INFO     | engines.train:train:165 - 
+epoch:8/20
+2024-04-25 15:35:18.502 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0043, recall: 0.0069, f1: 0.0053
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.063 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0526, recall: 0.0556, f1: 0.0541
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.064 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:20.071 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:35:20.071 | INFO     | engines.train:train:237 - aver_loss: 0.3547, f1: 0.0046, best_f1: 0.0126, best_epoch: 7 
+
+2024-04-25 15:35:20.072 | INFO     | engines.train:train:165 - 
+epoch:9/20
+2024-04-25 15:35:28.469 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:35:30.109 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0038, recall: 0.0069, f1: 0.0049
+2024-04-25 15:35:30.109 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.109 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.109 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0526, recall: 0.0556, f1: 0.0541
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.110 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:30.118 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:35:30.118 | INFO     | engines.train:train:237 - aver_loss: 0.2782, f1: 0.0045, best_f1: 0.0126, best_epoch: 7 
+
+2024-04-25 15:35:30.118 | INFO     | engines.train:train:165 - 
+epoch:10/20
+2024-04-25 15:35:38.220 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:35:39.825 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0044, recall: 0.0069, f1: 0.0054
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0392, recall: 0.0426, f1: 0.0408
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.826 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.1429, recall: 0.1667, f1: 0.1538
+2024-04-25 15:35:39.827 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.827 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:39.837 | INFO     | engines.train:train:214 - time consumption:0.16(min)
+2024-04-25 15:35:41.426 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 15:35:41.426 | INFO     | engines.train:train:237 - aver_loss: 0.2305, f1: 0.0154, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:35:41.426 | INFO     | engines.train:train:165 - 
+epoch:11/20
+2024-04-25 15:35:49.627 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0045, recall: 0.0069, f1: 0.0055
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0488, recall: 0.0426, f1: 0.0455
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.203 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.1176, recall: 0.1111, f1: 0.1143
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.204 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:35:51.212 | INFO     | engines.train:train:214 - time consumption:0.16(min)
+2024-04-25 15:35:51.212 | INFO     | engines.train:train:237 - aver_loss: 0.2138, f1: 0.0127, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:35:51.213 | INFO     | engines.train:train:165 - 
+epoch:12/20
+2024-04-25 15:35:59.350 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:36:00.910 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0038, recall: 0.0069, f1: 0.0049
+2024-04-25 15:36:00.910 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0370, recall: 0.0426, f1: 0.0396
+2024-04-25 15:36:00.910 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.910 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0526, recall: 0.0556, f1: 0.0541
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.911 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:00.919 | INFO     | engines.train:train:214 - time consumption:0.16(min)
+2024-04-25 15:36:00.919 | INFO     | engines.train:train:237 - aver_loss: 0.1984, f1: 0.0076, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:36:00.919 | INFO     | engines.train:train:165 - 
+epoch:13/20
+2024-04-25 15:36:09.785 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:36:11.404 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0038, recall: 0.0069, f1: 0.0050
+2024-04-25 15:36:11.404 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0339, recall: 0.0426, f1: 0.0377
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.405 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.1000, recall: 0.1111, f1: 0.1053
+2024-04-25 15:36:11.406 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0192, recall: 0.0189, f1: 0.0190
+2024-04-25 15:36:11.406 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:11.414 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:36:11.414 | INFO     | engines.train:train:237 - aver_loss: 0.1617, f1: 0.0128, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:36:11.414 | INFO     | engines.train:train:165 - 
+epoch:14/20
+2024-04-25 15:36:19.744 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:36:21.463 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0041, recall: 0.0069, f1: 0.0051
+2024-04-25 15:36:21.463 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0339, recall: 0.0426, f1: 0.0377
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.464 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.465 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0556, recall: 0.0556, f1: 0.0556
+2024-04-25 15:36:21.465 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.465 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:21.473 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:36:21.474 | INFO     | engines.train:train:237 - aver_loss: 0.1381, f1: 0.0076, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:36:21.474 | INFO     | engines.train:train:165 - 
+epoch:15/20
+2024-04-25 15:36:30.256 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0037, recall: 0.0069, f1: 0.0048
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0323, recall: 0.0426, f1: 0.0367
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.811 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0556, recall: 0.0556, f1: 0.0556
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0204, recall: 0.0189, f1: 0.0196
+2024-04-25 15:36:31.812 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:31.820 | INFO     | engines.train:train:214 - time consumption:0.17(min)
+2024-04-25 15:36:31.820 | INFO     | engines.train:train:237 - aver_loss: 0.1187, f1: 0.0090, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:36:31.820 | INFO     | engines.train:train:165 - 
+epoch:16/20
+2024-04-25 15:36:40.093 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 15:36:41.707 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0036, recall: 0.0069, f1: 0.0048
+2024-04-25 15:36:41.707 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0357, recall: 0.0426, f1: 0.0388
+2024-04-25 15:36:41.707 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.707 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0556, recall: 0.0556, f1: 0.0556
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0213, recall: 0.0189, f1: 0.0200
+2024-04-25 15:36:41.708 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 15:36:41.716 | INFO     | engines.train:train:214 - time consumption:0.16(min)
+2024-04-25 15:36:41.716 | INFO     | engines.train:train:237 - aver_loss: 0.1098, f1: 0.0092, best_f1: 0.0154, best_epoch: 10 
+
+2024-04-25 15:36:41.716 | INFO     | engines.train:train:241 - early stopped, no progress obtained within 5 epochs
+2024-04-25 15:36:41.716 | INFO     | engines.train:train:243 - overall best f1 is 0.015386493128522857 at 10 epoch
+2024-04-25 15:36:41.716 | INFO     | engines.train:train:244 - total training time consumption: 2.930(min)
+2024-04-25 23:12:29.369 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 23:12:29.413 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "Nationality",
+    "Origin",
+    "Date",
+    "Named",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 23:12:29.416 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 23:12:32.301 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-25 23:12:32.315 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-25 23:12:32.316 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-25 23:13:03.413 | INFO     | engines.train:train:207 - training_loss:0.359478
+2024-04-25 23:13:05.950 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:13:16.254 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.254 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.254 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.254 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.255 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:13:16.272 | INFO     | engines.train:train:214 - time consumption:0.73(min)
+2024-04-25 23:13:16.698 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:13:16.699 | INFO     | engines.train:train:237 - aver_loss: 0.3338, f1: 0.0000, best_f1: 0.0000, best_epoch: 1 
+
+2024-04-25 23:13:16.699 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-25 23:13:47.055 | INFO     | engines.train:train:207 - training_loss:0.027180
+2024-04-25 23:13:49.580 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:14:00.013 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.013 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.014 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:00.032 | INFO     | engines.train:train:214 - time consumption:0.72(min)
+2024-04-25 23:14:00.542 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:14:00.543 | INFO     | engines.train:train:237 - aver_loss: 0.0261, f1: 0.0000, best_f1: 0.0000, best_epoch: 2 
+
+2024-04-25 23:14:00.543 | INFO     | engines.train:train:165 - 
+epoch:3/30
+2024-04-25 23:14:31.140 | INFO     | engines.train:train:207 - training_loss:0.012135
+2024-04-25 23:14:33.695 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:14:44.229 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.229 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.230 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:14:44.249 | INFO     | engines.train:train:214 - time consumption:0.73(min)
+2024-04-25 23:14:44.750 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:14:44.750 | INFO     | engines.train:train:237 - aver_loss: 0.0118, f1: 0.0000, best_f1: 0.0000, best_epoch: 3 
+
+2024-04-25 23:14:44.750 | INFO     | engines.train:train:165 - 
+epoch:4/30
+2024-04-25 23:15:15.409 | INFO     | engines.train:train:207 - training_loss:0.008401
+2024-04-25 23:15:18.033 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:15:28.400 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.400 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.400 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.400 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.400 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.401 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:15:28.417 | INFO     | engines.train:train:214 - time consumption:0.73(min)
+2024-04-25 23:15:28.922 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:15:28.922 | INFO     | engines.train:train:237 - aver_loss: 0.0081, f1: 0.0000, best_f1: 0.0000, best_epoch: 4 
+
+2024-04-25 23:15:28.923 | INFO     | engines.train:train:165 - 
+epoch:5/30
+2024-04-25 23:15:59.003 | INFO     | engines.train:train:207 - training_loss:0.006263
+2024-04-25 23:16:01.503 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:16:11.893 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.894 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.895 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.895 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.895 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.895 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.895 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:11.914 | INFO     | engines.train:train:214 - time consumption:0.72(min)
+2024-04-25 23:16:12.427 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:16:12.428 | INFO     | engines.train:train:237 - aver_loss: 0.0066, f1: 0.0000, best_f1: 0.0000, best_epoch: 5 
+
+2024-04-25 23:16:12.428 | INFO     | engines.train:train:165 - 
+epoch:6/30
+2024-04-25 23:16:43.157 | INFO     | engines.train:train:207 - training_loss:0.005489
+2024-04-25 23:16:45.779 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:16:56.220 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.220 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.220 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.220 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.220 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.221 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:16:56.239 | INFO     | engines.train:train:214 - time consumption:0.73(min)
+2024-04-25 23:16:56.810 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:16:56.811 | INFO     | engines.train:train:237 - aver_loss: 0.0054, f1: 0.0000, best_f1: 0.0000, best_epoch: 6 
+
+2024-04-25 23:16:56.811 | INFO     | engines.train:train:165 - 
+epoch:7/30
+2024-04-25 23:17:26.934 | INFO     | engines.train:train:207 - training_loss:0.004633
+2024-04-25 23:17:29.365 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:17:39.456 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.456 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.457 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:17:39.472 | INFO     | engines.train:train:214 - time consumption:0.71(min)
+2024-04-25 23:17:39.978 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:17:39.979 | INFO     | engines.train:train:237 - aver_loss: 0.0045, f1: 0.0000, best_f1: 0.0000, best_epoch: 7 
+
+2024-04-25 23:17:39.979 | INFO     | engines.train:train:165 - 
+epoch:8/30
+2024-04-25 23:18:09.652 | INFO     | engines.train:train:207 - training_loss:0.004192
+2024-04-25 23:18:12.133 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:18:22.311 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.312 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.313 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.313 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.313 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.313 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.313 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:18:22.330 | INFO     | engines.train:train:214 - time consumption:0.71(min)
+2024-04-25 23:18:22.828 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:18:22.829 | INFO     | engines.train:train:237 - aver_loss: 0.0040, f1: 0.0000, best_f1: 0.0000, best_epoch: 8 
+
+2024-04-25 23:18:22.829 | INFO     | engines.train:train:165 - 
+epoch:9/30
+2024-04-25 23:18:52.973 | INFO     | engines.train:train:207 - training_loss:0.003139
+2024-04-25 23:18:55.442 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:19:05.645 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.646 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.647 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.647 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.647 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.647 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.647 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:05.662 | INFO     | engines.train:train:214 - time consumption:0.71(min)
+2024-04-25 23:19:06.160 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:19:06.161 | INFO     | engines.train:train:237 - aver_loss: 0.0030, f1: 0.0000, best_f1: 0.0000, best_epoch: 9 
+
+2024-04-25 23:19:06.161 | INFO     | engines.train:train:165 - 
+epoch:10/30
+2024-04-25 23:19:36.204 | INFO     | engines.train:train:207 - training_loss:0.004492
+2024-04-25 23:19:38.687 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:19:48.819 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Nationality, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Origin, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Date, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.820 | INFO     | engines.train:validate:293 - class_name: Named, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.821 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:19:48.837 | INFO     | engines.train:train:214 - time consumption:0.71(min)
+2024-04-25 23:19:49.341 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:19:49.342 | INFO     | engines.train:train:237 - aver_loss: 0.0043, f1: 0.0000, best_f1: 0.0000, best_epoch: 10 
+
+2024-04-25 23:19:49.342 | INFO     | engines.train:train:165 - 
+epoch:11/30
+2024-04-25 23:22:53.660 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 23:22:53.696 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 16,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 23:22:53.697 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 23:22:56.308 | INFO     | engines.train:train:128 - Resuming from checkpoint...
+2024-04-25 23:24:09.346 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 23:24:09.382 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 23:24:09.382 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 23:24:12.179 | INFO     | engines.train:train:128 - Resuming from checkpoint...
+2024-04-25 23:25:09.317 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 23:25:09.360 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 5
+}
+2024-04-25 23:25:09.361 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 23:25:12.088 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-25 23:25:12.098 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-25 23:25:12.099 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-25 23:25:38.181 | INFO     | engines.train:train:207 - training_loss:0.383372
+2024-04-25 23:25:40.350 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:25:48.128 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.129 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:25:48.141 | INFO     | engines.train:train:214 - time consumption:0.60(min)
+2024-04-25 23:25:48.567 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:25:48.568 | INFO     | engines.train:train:237 - aver_loss: 0.3551, f1: 0.0000, best_f1: 0.0000, best_epoch: 1 
+
+2024-04-25 23:25:48.568 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-25 23:26:14.640 | INFO     | engines.train:train:207 - training_loss:0.023936
+2024-04-25 23:26:16.788 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:26:24.576 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.576 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.2069, recall: 0.2609, f1: 0.2308
+2024-04-25 23:26:24.576 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.577 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:26:24.588 | INFO     | engines.train:train:214 - time consumption:0.60(min)
+2024-04-25 23:26:25.095 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:26:25.095 | INFO     | engines.train:train:237 - aver_loss: 0.0230, f1: 0.0256, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:26:25.096 | INFO     | engines.train:train:165 - 
+epoch:3/30
+2024-04-25 23:26:50.619 | INFO     | engines.train:train:207 - training_loss:0.015269
+2024-04-25 23:26:52.797 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:27:00.504 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.504 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.1852, recall: 0.2174, f1: 0.2000
+2024-04-25 23:27:00.504 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.504 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.505 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.505 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.505 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.505 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.505 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:00.517 | INFO     | engines.train:train:214 - time consumption:0.59(min)
+2024-04-25 23:27:00.517 | INFO     | engines.train:train:237 - aver_loss: 0.0146, f1: 0.0222, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:27:00.517 | INFO     | engines.train:train:165 - 
+epoch:4/30
+2024-04-25 23:27:25.935 | INFO     | engines.train:train:207 - training_loss:0.009459
+2024-04-25 23:27:28.069 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:27:35.850 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.851 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.852 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:27:35.863 | INFO     | engines.train:train:214 - time consumption:0.59(min)
+2024-04-25 23:27:35.863 | INFO     | engines.train:train:237 - aver_loss: 0.0091, f1: 0.0000, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:27:35.863 | INFO     | engines.train:train:165 - 
+epoch:5/30
+2024-04-25 23:28:01.292 | INFO     | engines.train:train:207 - training_loss:0.006268
+2024-04-25 23:28:03.467 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:28:11.238 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.238 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.238 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.238 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.238 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.239 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.239 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.239 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.239 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:11.253 | INFO     | engines.train:train:214 - time consumption:0.59(min)
+2024-04-25 23:28:11.253 | INFO     | engines.train:train:237 - aver_loss: 0.0066, f1: 0.0000, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:28:11.253 | INFO     | engines.train:train:165 - 
+epoch:6/30
+2024-04-25 23:28:37.671 | INFO     | engines.train:train:207 - training_loss:0.006135
+2024-04-25 23:28:39.805 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:28:47.541 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.542 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:28:47.554 | INFO     | engines.train:train:214 - time consumption:0.60(min)
+2024-04-25 23:28:47.554 | INFO     | engines.train:train:237 - aver_loss: 0.0062, f1: 0.0000, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:28:47.554 | INFO     | engines.train:train:165 - 
+epoch:7/30
+2024-04-25 23:29:12.719 | INFO     | engines.train:train:207 - training_loss:0.007259
+2024-04-25 23:29:14.833 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.522 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.523 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.523 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.523 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:22.535 | INFO     | engines.train:train:214 - time consumption:0.58(min)
+2024-04-25 23:29:22.536 | INFO     | engines.train:train:237 - aver_loss: 0.0076, f1: 0.0000, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:29:22.536 | INFO     | engines.train:train:165 - 
+epoch:8/30
+2024-04-25 23:29:47.889 | INFO     | engines.train:train:207 - training_loss:0.005809
+2024-04-25 23:29:50.024 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:29:57.744 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.744 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.744 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.745 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:29:57.756 | INFO     | engines.train:train:214 - time consumption:0.59(min)
+2024-04-25 23:29:57.756 | INFO     | engines.train:train:237 - aver_loss: 0.0057, f1: 0.0000, best_f1: 0.0256, best_epoch: 2 
+
+2024-04-25 23:29:57.757 | INFO     | engines.train:train:241 - early stopped, no progress obtained within 5 epochs
+2024-04-25 23:29:57.757 | INFO     | engines.train:train:243 - overall best f1 is 0.02564102564092702 at 2 epoch
+2024-04-25 23:29:57.757 | INFO     | engines.train:train:244 - total training time consumption: 4.761(min)
+2024-04-25 23:36:06.972 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-25 23:36:07.017 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-25 23:36:07.017 | INFO     | __main__:<module>:50 - mode: train
+2024-04-25 23:36:09.808 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-25 23:36:09.817 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-25 23:36:09.818 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-25 23:36:26.759 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:36:31.287 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.287 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.288 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:31.291 | INFO     | engines.train:train:214 - time consumption:0.36(min)
+2024-04-25 23:36:31.781 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:36:31.781 | INFO     | engines.train:train:237 - aver_loss: 0.7004, f1: 0.0000, best_f1: 0.0000, best_epoch: 1 
+
+2024-04-25 23:36:31.782 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-25 23:36:49.256 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.2000, recall: 0.2903, f1: 0.2368
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.928 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.929 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.929 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.929 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:36:53.934 | INFO     | engines.train:train:214 - time consumption:0.37(min)
+2024-04-25 23:36:54.445 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-25 23:36:54.445 | INFO     | engines.train:train:237 - aver_loss: 0.0547, f1: 0.0263, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:36:54.445 | INFO     | engines.train:train:165 - 
+epoch:3/30
+2024-04-25 23:37:10.544 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:37:15.008 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.008 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.008 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.008 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.008 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.009 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.009 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.009 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.009 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:15.014 | INFO     | engines.train:train:214 - time consumption:0.34(min)
+2024-04-25 23:37:15.014 | INFO     | engines.train:train:237 - aver_loss: 0.0281, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:37:15.014 | INFO     | engines.train:train:165 - 
+epoch:4/30
+2024-04-25 23:37:31.130 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:37:35.593 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.594 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:35.599 | INFO     | engines.train:train:214 - time consumption:0.34(min)
+2024-04-25 23:37:35.599 | INFO     | engines.train:train:237 - aver_loss: 0.0193, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:37:35.599 | INFO     | engines.train:train:165 - 
+epoch:5/30
+2024-04-25 23:37:52.724 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.275 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.276 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.276 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.276 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:37:57.280 | INFO     | engines.train:train:214 - time consumption:0.36(min)
+2024-04-25 23:37:57.281 | INFO     | engines.train:train:237 - aver_loss: 0.0145, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:37:57.281 | INFO     | engines.train:train:165 - 
+epoch:6/30
+2024-04-25 23:38:13.705 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:38:18.302 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.303 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:18.309 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:38:18.309 | INFO     | engines.train:train:237 - aver_loss: 0.0140, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:38:18.309 | INFO     | engines.train:train:165 - 
+epoch:7/30
+2024-04-25 23:38:35.383 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:38:39.943 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.943 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.943 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.943 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.944 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.944 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.944 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.944 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.944 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:38:39.949 | INFO     | engines.train:train:214 - time consumption:0.36(min)
+2024-04-25 23:38:39.949 | INFO     | engines.train:train:237 - aver_loss: 0.0111, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:38:39.949 | INFO     | engines.train:train:165 - 
+epoch:8/30
+2024-04-25 23:38:56.034 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:39:00.868 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.868 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.868 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.869 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:00.875 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:39:00.875 | INFO     | engines.train:train:237 - aver_loss: 0.0099, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:39:00.875 | INFO     | engines.train:train:165 - 
+epoch:9/30
+2024-04-25 23:39:16.911 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:39:21.633 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.634 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:21.640 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:39:21.640 | INFO     | engines.train:train:237 - aver_loss: 0.0086, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:39:21.640 | INFO     | engines.train:train:165 - 
+epoch:10/30
+2024-04-25 23:39:37.873 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:39:42.513 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.514 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:39:42.519 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:39:42.519 | INFO     | engines.train:train:237 - aver_loss: 0.0067, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:39:42.519 | INFO     | engines.train:train:165 - 
+epoch:11/30
+2024-04-25 23:39:59.868 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:40:04.466 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.467 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:04.473 | INFO     | engines.train:train:214 - time consumption:0.37(min)
+2024-04-25 23:40:04.473 | INFO     | engines.train:train:237 - aver_loss: 0.0058, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:40:04.473 | INFO     | engines.train:train:165 - 
+epoch:12/30
+2024-04-25 23:40:21.385 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:40:25.890 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.891 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.892 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:25.896 | INFO     | engines.train:train:214 - time consumption:0.36(min)
+2024-04-25 23:40:25.897 | INFO     | engines.train:train:237 - aver_loss: 0.0069, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:40:25.897 | INFO     | engines.train:train:165 - 
+epoch:13/30
+2024-04-25 23:40:42.162 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:40:46.719 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.720 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:40:46.725 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:40:46.725 | INFO     | engines.train:train:237 - aver_loss: 0.0057, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:40:46.726 | INFO     | engines.train:train:165 - 
+epoch:14/30
+2024-04-25 23:41:03.967 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:41:08.877 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.877 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.877 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.878 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:08.883 | INFO     | engines.train:train:214 - time consumption:0.37(min)
+2024-04-25 23:41:08.884 | INFO     | engines.train:train:237 - aver_loss: 0.0048, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:41:08.884 | INFO     | engines.train:train:165 - 
+epoch:15/30
+2024-04-25 23:41:26.161 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:41:30.807 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.808 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.809 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.809 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:30.814 | INFO     | engines.train:train:214 - time consumption:0.37(min)
+2024-04-25 23:41:30.814 | INFO     | engines.train:train:237 - aver_loss: 0.0043, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:41:30.815 | INFO     | engines.train:train:165 - 
+epoch:16/30
+2024-04-25 23:41:47.276 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:41:52.041 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.042 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.042 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.042 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.042 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.043 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.043 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.043 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.043 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:41:52.048 | INFO     | engines.train:train:214 - time consumption:0.35(min)
+2024-04-25 23:41:52.048 | INFO     | engines.train:train:237 - aver_loss: 0.0044, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:41:52.049 | INFO     | engines.train:train:165 - 
+epoch:17/30
+2024-04-25 23:42:09.349 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:42:13.985 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.986 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:13.991 | INFO     | engines.train:train:214 - time consumption:0.37(min)
+2024-04-25 23:42:13.991 | INFO     | engines.train:train:237 - aver_loss: 0.0042, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:42:13.991 | INFO     | engines.train:train:165 - 
+epoch:18/30
+2024-04-25 23:42:31.036 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.637 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.638 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.638 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.638 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-25 23:42:35.643 | INFO     | engines.train:train:214 - time consumption:0.36(min)
+2024-04-25 23:42:35.643 | INFO     | engines.train:train:237 - aver_loss: 0.0045, f1: 0.0000, best_f1: 0.0263, best_epoch: 2 
+
+2024-04-25 23:42:35.643 | INFO     | engines.train:train:241 - early stopped, no progress obtained within 15 epochs
+2024-04-25 23:42:35.644 | INFO     | engines.train:train:243 - overall best f1 is 0.026315789473614955 at 2 epoch
+2024-04-25 23:42:35.644 | INFO     | engines.train:train:244 - total training time consumption: 6.430(min)
+2024-04-26 23:33:53.515 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-26 23:33:53.556 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number",
+    "WorkContent"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-26 23:33:53.556 | INFO     | __main__:<module>:50 - mode: train
+2024-04-26 23:33:56.450 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-26 23:33:56.496 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-26 23:33:56.497 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-26 23:34:22.807 | INFO     | engines.train:train:207 - training_loss:0.674768
+2024-04-26 23:34:48.954 | INFO     | engines.train:train:207 - training_loss:0.375537
+2024-04-26 23:35:14.512 | INFO     | engines.train:train:207 - training_loss:0.260479
+2024-04-26 23:35:37.519 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:35:54.863 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.864 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.865 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.865 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:35:54.865 | INFO     | engines.train:train:214 - time consumption:1.97(min)
+2024-04-26 23:35:55.331 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-26 23:35:55.331 | INFO     | engines.train:train:237 - aver_loss: 0.2056, f1: 0.0000, best_f1: 0.0000, best_epoch: 1 
+
+2024-04-26 23:35:55.331 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-26 23:36:21.515 | INFO     | engines.train:train:207 - training_loss:0.015192
+2024-04-26 23:36:47.151 | INFO     | engines.train:train:207 - training_loss:0.014722
+2024-04-26 23:37:12.923 | INFO     | engines.train:train:207 - training_loss:0.013499
+2024-04-26 23:37:35.889 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:37:53.373 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.373 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0162, recall: 0.0177, f1: 0.0169
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:37:53.374 | INFO     | engines.train:train:214 - time consumption:1.97(min)
+2024-04-26 23:37:53.906 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-26 23:37:53.906 | INFO     | engines.train:train:237 - aver_loss: 0.0138, f1: 0.0019, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:37:53.906 | INFO     | engines.train:train:165 - 
+epoch:3/30
+2024-04-26 23:38:19.969 | INFO     | engines.train:train:207 - training_loss:0.011364
+2024-04-26 23:38:45.437 | INFO     | engines.train:train:207 - training_loss:0.010717
+2024-04-26 23:39:11.892 | INFO     | engines.train:train:207 - training_loss:0.009980
+2024-04-26 23:39:35.244 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:39:52.798 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.799 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:39:52.800 | INFO     | engines.train:train:214 - time consumption:1.98(min)
+2024-04-26 23:39:52.800 | INFO     | engines.train:train:237 - aver_loss: 0.0100, f1: 0.0000, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:39:52.800 | INFO     | engines.train:train:165 - 
+epoch:4/30
+2024-04-26 23:40:18.607 | INFO     | engines.train:train:207 - training_loss:0.007912
+2024-04-26 23:40:45.329 | INFO     | engines.train:train:207 - training_loss:0.007685
+2024-04-26 23:41:11.947 | INFO     | engines.train:train:207 - training_loss:0.009159
+2024-04-26 23:41:34.922 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0023, recall: 0.0025, f1: 0.0024
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.083 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.084 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.084 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.084 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:41:52.084 | INFO     | engines.train:train:214 - time consumption:1.99(min)
+2024-04-26 23:41:52.084 | INFO     | engines.train:train:237 - aver_loss: 0.0096, f1: 0.0003, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:41:52.084 | INFO     | engines.train:train:165 - 
+epoch:5/30
+2024-04-26 23:42:17.744 | INFO     | engines.train:train:207 - training_loss:0.006458
+2024-04-26 23:42:43.058 | INFO     | engines.train:train:207 - training_loss:0.005542
+2024-04-26 23:43:08.363 | INFO     | engines.train:train:207 - training_loss:0.006616
+2024-04-26 23:43:31.496 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:43:48.427 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.427 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:43:48.428 | INFO     | engines.train:train:214 - time consumption:1.94(min)
+2024-04-26 23:43:48.428 | INFO     | engines.train:train:237 - aver_loss: 0.0069, f1: 0.0000, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:43:48.429 | INFO     | engines.train:train:165 - 
+epoch:6/30
+2024-04-26 23:44:14.224 | INFO     | engines.train:train:207 - training_loss:0.008854
+2024-04-26 23:44:39.873 | INFO     | engines.train:train:207 - training_loss:0.008702
+2024-04-26 23:45:05.238 | INFO     | engines.train:train:207 - training_loss:0.008129
+2024-04-26 23:45:28.233 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:45:45.124 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.124 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0023, recall: 0.0025, f1: 0.0024
+2024-04-26 23:45:45.124 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.124 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:45:45.125 | INFO     | engines.train:train:214 - time consumption:1.94(min)
+2024-04-26 23:45:45.125 | INFO     | engines.train:train:237 - aver_loss: 0.0076, f1: 0.0003, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:45:45.125 | INFO     | engines.train:train:165 - 
+epoch:7/30
+2024-04-26 23:46:10.898 | INFO     | engines.train:train:207 - training_loss:0.006215
+2024-04-26 23:46:36.573 | INFO     | engines.train:train:207 - training_loss:0.005307
+2024-04-26 23:47:02.568 | INFO     | engines.train:train:207 - training_loss:0.005302
+2024-04-26 23:47:25.853 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:47:43.508 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.509 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.510 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:47:43.510 | INFO     | engines.train:train:214 - time consumption:1.97(min)
+2024-04-26 23:47:43.510 | INFO     | engines.train:train:237 - aver_loss: 0.0058, f1: 0.0000, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:47:43.510 | INFO     | engines.train:train:165 - 
+epoch:8/30
+2024-04-26 23:48:09.981 | INFO     | engines.train:train:207 - training_loss:0.006493
+2024-04-26 23:48:35.446 | INFO     | engines.train:train:207 - training_loss:0.005291
+2024-04-26 23:49:00.924 | INFO     | engines.train:train:207 - training_loss:0.005016
+2024-04-26 23:49:23.708 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0024, recall: 0.0025, f1: 0.0024
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.690 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.691 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.691 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.691 | INFO     | engines.train:validate:293 - class_name: WorkContent, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:49:40.691 | INFO     | engines.train:train:214 - time consumption:1.95(min)
+2024-04-26 23:49:40.691 | INFO     | engines.train:train:237 - aver_loss: 0.0053, f1: 0.0003, best_f1: 0.0019, best_epoch: 2 
+
+2024-04-26 23:49:40.691 | INFO     | engines.train:train:165 - 
+epoch:9/30
+2024-04-26 23:50:06.197 | INFO     | engines.train:train:207 - training_loss:0.005133
+2024-04-26 23:50:58.306 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-26 23:50:58.349 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-26 23:50:58.350 | INFO     | __main__:<module>:50 - mode: train
+2024-04-26 23:51:01.205 | INFO     | engines.train:train:128 - Resuming from checkpoint...
+2024-04-26 23:52:49.480 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-26 23:52:49.517 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets2/train_data.json",
+  "dev_file": "data/example_datasets2/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "person",
+    "location",
+    "organization"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-26 23:52:49.517 | INFO     | __main__:<module>:50 - mode: train
+2024-04-26 23:52:52.185 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-26 23:52:52.363 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-26 23:52:52.363 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-26 23:53:09.637 | INFO     | engines.train:train:207 - training_loss:1.159299
+2024-04-26 23:53:27.337 | INFO     | engines.train:train:207 - training_loss:0.795421
+2024-04-26 23:53:44.674 | INFO     | engines.train:train:207 - training_loss:0.639684
+2024-04-26 23:54:01.995 | INFO     | engines.train:train:207 - training_loss:0.554529
+2024-04-26 23:54:18.959 | INFO     | engines.train:train:207 - training_loss:0.499484
+2024-04-26 23:54:35.762 | INFO     | engines.train:train:207 - training_loss:0.458089
+2024-04-26 23:54:52.489 | INFO     | engines.train:train:207 - training_loss:0.425832
+2024-04-26 23:54:56.472 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:55:09.914 | INFO     | engines.train:validate:293 - class_name: person, precision: 0.9750, recall: 0.9750, f1: 0.9750
+2024-04-26 23:55:09.914 | INFO     | engines.train:validate:293 - class_name: location, precision: 0.9540, recall: 0.9416, f1: 0.9478
+2024-04-26 23:55:09.915 | INFO     | engines.train:validate:293 - class_name: organization, precision: 0.9512, recall: 0.8510, f1: 0.8983
+2024-04-26 23:55:09.915 | INFO     | engines.train:train:214 - time consumption:2.29(min)
+2024-04-26 23:55:10.343 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-26 23:55:10.344 | INFO     | engines.train:train:237 - aver_loss: 0.4196, f1: 0.9403, best_f1: 0.9403, best_epoch: 1 
+
+2024-04-26 23:55:10.344 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-26 23:56:53.331 | INFO     | __main__:<module>:44 - device: cuda
+2024-04-26 23:56:53.377 | INFO     | __main__:<module>:48 - {
+  "train_file": "data/example_datasets1/train_data.json",
+  "dev_file": "data/example_datasets1/dev_data.json",
+  "validation_rate": 0.15,
+  "test_file": "",
+  "model_type": "gp",
+  "checkpoints_dir": "checkpoints/",
+  "model_name": "best_model",
+  "classes": [
+    "Author",
+    "Dynasty",
+    "WorkTitle",
+    "Gender",
+    "WorkType",
+    "FamousSentence",
+    "CollectiveTitle",
+    "Number"
+  ],
+  "decision_threshold": 0.5,
+  "use_multilabel_categorical_cross_entropy": true,
+  "use_gan": false,
+  "gan_method": "pgd",
+  "attack_round": 3,
+  "warmup": false,
+  "scheduler_type": "linear",
+  "num_warmup_steps": -1,
+  "max_sequence_length": 200,
+  "epoch": 30,
+  "batch_size": 32,
+  "dropout_rate": 0.5,
+  "print_per_batch": 100,
+  "learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "is_early_stop": true,
+  "patient": 15
+}
+2024-04-26 23:56:53.377 | INFO     | __main__:<module>:50 - mode: train
+2024-04-26 23:56:56.413 | INFO     | engines.train:train:133 - Initializing from scratch.
+2024-04-26 23:56:56.476 | INFO     | engines.train:split_data:111 - loading train data...
+2024-04-26 23:56:56.478 | INFO     | engines.train:train:165 - 
+epoch:1/30
+2024-04-26 23:57:21.509 | INFO     | engines.train:train:207 - training_loss:0.595837
+2024-04-26 23:57:45.425 | INFO     | engines.train:train:207 - training_loss:0.325420
+2024-04-26 23:58:09.119 | INFO     | engines.train:train:207 - training_loss:0.226707
+2024-04-26 23:58:30.764 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-26 23:58:45.956 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0137, recall: 0.0152, f1: 0.0144
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.957 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-26 23:58:45.958 | INFO     | engines.train:train:214 - time consumption:1.82(min)
+2024-04-26 23:58:46.406 | INFO     | engines.train:train:232 - saved model successful...
+2024-04-26 23:58:46.406 | INFO     | engines.train:train:237 - aver_loss: 0.1801, f1: 0.0018, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-26 23:58:46.407 | INFO     | engines.train:train:165 - 
+epoch:2/30
+2024-04-26 23:59:11.077 | INFO     | engines.train:train:207 - training_loss:0.017871
+2024-04-26 23:59:35.357 | INFO     | engines.train:train:207 - training_loss:0.017397
+2024-04-26 23:59:59.956 | INFO     | engines.train:train:207 - training_loss:0.015972
+2024-04-27 00:00:22.450 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-27 00:00:37.614 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.614 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.614 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.614 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.614 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.615 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.615 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.615 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:00:37.615 | INFO     | engines.train:train:214 - time consumption:1.85(min)
+2024-04-27 00:00:37.615 | INFO     | engines.train:train:237 - aver_loss: 0.0153, f1: 0.0000, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-27 00:00:37.615 | INFO     | engines.train:train:165 - 
+epoch:3/30
+2024-04-27 00:01:02.575 | INFO     | engines.train:train:207 - training_loss:0.012276
+2024-04-27 00:01:26.912 | INFO     | engines.train:train:207 - training_loss:0.012057
+2024-04-27 00:01:50.778 | INFO     | engines.train:train:207 - training_loss:0.011871
+2024-04-27 00:02:11.975 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-27 00:02:26.949 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:02:26.950 | INFO     | engines.train:train:214 - time consumption:1.82(min)
+2024-04-27 00:02:26.950 | INFO     | engines.train:train:237 - aver_loss: 0.0117, f1: 0.0000, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-27 00:02:26.951 | INFO     | engines.train:train:165 - 
+epoch:4/30
+2024-04-27 00:02:51.228 | INFO     | engines.train:train:207 - training_loss:0.012420
+2024-04-27 00:03:16.247 | INFO     | engines.train:train:207 - training_loss:0.010968
+2024-04-27 00:03:41.087 | INFO     | engines.train:train:207 - training_loss:0.010153
+2024-04-27 00:04:03.434 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-27 00:04:18.650 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.650 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0023, recall: 0.0025, f1: 0.0024
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:04:18.651 | INFO     | engines.train:train:214 - time consumption:1.86(min)
+2024-04-27 00:04:18.651 | INFO     | engines.train:train:237 - aver_loss: 0.0098, f1: 0.0003, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-27 00:04:18.651 | INFO     | engines.train:train:165 - 
+epoch:5/30
+2024-04-27 00:04:42.833 | INFO     | engines.train:train:207 - training_loss:0.013519
+2024-04-27 00:05:06.601 | INFO     | engines.train:train:207 - training_loss:0.011421
+2024-04-27 00:05:30.734 | INFO     | engines.train:train:207 - training_loss:0.011346
+2024-04-27 00:05:52.446 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-27 00:06:07.812 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.812 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.812 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.812 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.813 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.813 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.813 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.813 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:06:07.813 | INFO     | engines.train:train:214 - time consumption:1.82(min)
+2024-04-27 00:06:07.813 | INFO     | engines.train:train:237 - aver_loss: 0.0108, f1: 0.0000, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-27 00:06:07.813 | INFO     | engines.train:train:165 - 
+epoch:6/30
+2024-04-27 00:06:32.002 | INFO     | engines.train:train:207 - training_loss:0.007790
+2024-04-27 00:06:56.523 | INFO     | engines.train:train:207 - training_loss:0.008289
+2024-04-27 00:07:21.143 | INFO     | engines.train:train:207 - training_loss:0.007876
+2024-04-27 00:07:43.064 | INFO     | engines.train:validate:260 - start evaluate engines...
+2024-04-27 00:07:58.674 | INFO     | engines.train:validate:293 - class_name: Author, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: Dynasty, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: WorkTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: Gender, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: WorkType, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: FamousSentence, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: CollectiveTitle, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:validate:293 - class_name: Number, precision: 0.0000, recall: 0.0000, f1: 0.0000
+2024-04-27 00:07:58.675 | INFO     | engines.train:train:214 - time consumption:1.85(min)
+2024-04-27 00:07:58.675 | INFO     | engines.train:train:237 - aver_loss: 0.0076, f1: 0.0000, best_f1: 0.0018, best_epoch: 1 
+
+2024-04-27 00:07:58.675 | INFO     | engines.train:train:165 - 
+epoch:7/30
+2024-04-27 00:08:22.568 | INFO     | engines.train:train:207 - training_loss:0.008630
+2024-04-27 00:08:46.680 | INFO     | engines.train:train:207 - training_loss:0.007654
+2024-04-27 00:09:10.322 | INFO     | engines.train:train:207 - training_loss:0.006614

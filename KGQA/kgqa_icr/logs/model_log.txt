@@ -1,0 +1,121 @@
+2024-05-13 11:54:11.170 | INFO     | __main__:fasttext_train:98 -
+Precision: 0.9932603201347936, Recall: 0.9932603201347936
+
+2024-05-13 11:54:11.500 | INFO     | __main__:fasttext_train:102 -
+                        precision    recall  f1-score   support
+               author_1      0.944     0.971     0.958        35
+               author_2      1.000     0.984     0.992        61
+         author_of_ct_1      0.978     1.000     0.989        45
+         author_of_ct_2      1.000     1.000     1.000        46
+    author_of_dynasty_1      0.976     0.988     0.982        82
+     author_of_female_1      1.000     1.000     1.000        60
+         author_of_fs_1      1.000     0.983     0.991        58
+         author_of_fs_2      1.000     1.000     1.000        37
+      author_of_title_1      1.000     1.000     1.000        61
+         author_of_wc_1      1.000     1.000     1.000        51
+       author_of_work_2      1.000     1.000     1.000        72
+       author_type_fs_1      0.987     1.000     0.994        78
+     author_type_work_1      0.971     0.985     0.978        67
+     author_work_type_1      1.000     1.000     1.000        48
+        cnt_of_author_3      1.000     1.000     1.000        54
+     content_of_title_1      0.981     1.000     0.991        53
+dynasty_author_female_1      1.000     1.000     1.000        86
+    dynasty_of_author_1      1.000     0.989     0.994        89
+    dynasty_of_author_2      1.000     1.000     1.000        62
+    dynasty_of_author_3      1.000     1.000     1.000        62
+        dynasty_of_fs_1      1.000     1.000     1.000        55
+     dynasty_of_title_1      1.000     1.000     1.000        57
+                   fs_1      1.000     1.000     1.000        14
+         fs_of_author_1      0.973     1.000     0.986        72
+        fs_of_dynasty_1      1.000     0.947     0.973        38
+           fs_of_type_1      0.979     0.979     0.979        96
+           fs_of_work_1      1.000     0.988     0.994        84
+     gender_of_author_1      1.000     1.000     1.000        82
+     gender_of_author_2      1.000     1.000     1.000        60
+               max_wc_3      1.000     1.000     1.000        55
+               others_4      0.999     0.999     0.999       925
+          title_of_fs_1      0.980     1.000     0.990        48
+           type_of_fs_1      1.000     1.000     1.000        46
+         type_of_work_1      1.000     1.000     1.000        77
+         type_of_work_2      1.000     1.000     1.000        67
+    type_work_dynasty_1      1.000     0.986     0.993        71
+         wc_of_author_1      1.000     0.987     0.994        78
+         wc_of_author_3      1.000     1.000     1.000        57
+                 work_1      1.000     1.000     1.000        28
+       work_of_author_1      1.000     0.931     0.964        72
+      work_of_dynasty_1      0.911     0.973     0.941        74
+        work_of_title_1      1.000     1.000     1.000        66
+         work_of_type_1      0.985     0.977     0.981       132
+
+               accuracy                          0.993      3561
+              macro avg      0.992     0.992     0.992      3561
+           weighted avg      0.993     0.993     0.993      3561
+
+2024-05-13 12:00:35.544 | INFO     | __main__:model_test:108 - 模型测试……
+2024-05-13 12:00:36.572 | INFO     | __main__:model_test:116 -
+                            precision    recall  f1-score   support
+               author_1      0.971     0.971     0.971        35
+               author_2      1.000     1.000     1.000        82
+         author_of_ct_1      0.986     1.000     0.993        71
+         author_of_ct_2      1.000     1.000     1.000        54
+    author_of_dynasty_1      0.972     0.986     0.979        71
+     author_of_female_1      1.000     1.000     1.000        45
+         author_of_fs_1      1.000     1.000     1.000        71
+         author_of_fs_2      1.000     0.982     0.991        55
+      author_of_title_1      0.986     0.986     0.986        74
+         author_of_wc_1      1.000     1.000     1.000        61
+       author_of_work_2      1.000     1.000     1.000        53
+       author_type_fs_1      0.985     1.000     0.993        67
+     author_type_work_1      1.000     1.000     1.000        70
+     author_work_type_1      1.000     1.000     1.000        77
+        cnt_of_author_3      1.000     1.000     1.000        56
+     content_of_title_1      1.000     1.000     1.000        60
+dynasty_author_female_1      1.000     1.000     1.000        75
+    dynasty_of_author_1      1.000     1.000     1.000        85
+    dynasty_of_author_2      1.000     1.000     1.000        77
+    dynasty_of_author_3      1.000     1.000     1.000        80
+        dynasty_of_fs_1      1.000     1.000     1.000        64
+     dynasty_of_title_1      1.000     0.984     0.992        64
+                   fs_1      1.000     1.000     1.000        12
+         fs_of_author_1      1.000     0.982     0.991       109
+        fs_of_dynasty_1      0.983     1.000     0.991        58
+           fs_of_type_1      0.980     0.980     0.980       101
+           fs_of_work_1      0.989     1.000     0.995        92
+     gender_of_author_1      1.000     1.000     1.000       100
+     gender_of_author_2      0.986     1.000     0.993        73
+               max_wc_3      1.000     1.000     1.000        66
+               others_4      0.999     0.998     0.999      1062
+          title_of_fs_1      1.000     1.000     1.000        55
+           type_of_fs_1      1.000     1.000     1.000        37
+         type_of_work_1      1.000     1.000     1.000        76
+         type_of_work_2      1.000     1.000     1.000        59
+    type_work_dynasty_1      1.000     1.000     1.000        74
+         wc_of_author_1      0.978     1.000     0.989        87
+         wc_of_author_3      1.000     1.000     1.000        57
+                 work_1      1.000     0.971     0.985        34
+       work_of_author_1      0.976     0.965     0.970        85
+      work_of_dynasty_1      0.989     1.000     0.994        88
+        work_of_title_1      1.000     1.000     1.000        56
+         work_of_type_1      0.984     0.969     0.977       129
+
+               accuracy                          0.995      3957
+              macro avg      0.995     0.995     0.995      3957
+           weighted avg      0.995     0.995     0.995      3957
+
+2024-05-13 12:05:12.478 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：你好啊，小诗，你可知道《静夜思》的作者是谁？如果知道的话，麻烦告诉我一下，谢谢。
+2024-05-13 12:05:31.739 | INFO     | __main__:model_pipeline:183 - [(['author_of_title_1', 'work_1', 'dynasty_of_title_1'], [0.9984988, 0.0011629855, 0.00011329981])]
+2024-05-13 12:05:31.739 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：我对陆游的思乡名句很感兴趣，小诗你能分享一些给我吗？
+2024-05-13 12:06:06.451 | INFO     | __main__:model_pipeline:183 - [(['author_type_fs_1', 'fs_of_work_1', 'type_work_dynasty_1'], [0.983846, 0.01262481, 0.0015699002])]
+2024-05-13 12:06:06.451 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：我想知道范仲淹在文学上的杰出贡献具体体现在哪些著名的诗句上？
+2024-05-13 12:06:41.194 | INFO     | __main__:model_pipeline:183 - [(['fs_of_author_1', 'author_type_fs_1', 'work_of_author_1'], [0.94927174, 0.043240637, 0.0043157395])]
+2024-05-13 12:06:41.194 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：请问在杜甫的作品中，有哪些是值得深入研究和品读的诗词？
+2024-05-13 12:07:03.471 | INFO     | __main__:model_pipeline:183 - [(['work_of_author_1', 'fs_of_author_1', 'work_of_dynasty_1'], [0.9993036, 0.00066331495, 5.5802888e-05])]
+2024-05-13 12:16:59.019 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：小诗，你在吗？我想探究一下《春江花月夜》这首脍炙人口的古诗是否以春天为题材进行写作的。
+2024-05-13 12:16:59.019 | INFO     | __main__:model_pipeline:183 - [(['type_of_work_2', 'fs_of_work_1', 'content_of_title_1'], [0.99639666, 0.001478279, 0.0010358031])]
+2024-05-13 12:17:20.491 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：你能帮我查一下李白和苏轼的出生朝代是否一样吗？
+2024-05-13 12:17:20.491 | INFO     | __main__:model_pipeline:183 - [(['dynasty_of_author_3', 'dynasty_of_author_1', 'author_1'], [0.98842746, 0.011006338, 0.00041629744])]
+2024-05-13 12:17:39.832 | INFO     | __main__:model_pipeline:177 - 输入待预测的语句：那数学写的不错，但是我不知道你的题目是啥？
+2024-05-13 12:17:39.832 | INFO     | __main__:model_pipeline:183 - [(['others_4', 'author_of_fs_1', 'author_2'], [0.8118651, 0.05366601, 0.042892396])]
+2024-06-19 19:48:20.967 | INFO     | __main__:model_pipeline:176 - 输入待预测的语句：
+2024-06-19 19:48:41.044 | INFO     | __main__:model_pipeline:182 - [(['work_of_author_1', 'author_type_work_1', 'author_1'], [0.9861169, 0.0068759476, 0.004342])]
+2024-06-19 19:48:41.045 | INFO     | __main__:model_pipeline:176 - 输入待预测的语句：

@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="../static/bootstrap/bootstrap.4.6.min.css">-->
+<!--    <link rel="stylesheet" href="../static/css/init.css">-->
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.4.6.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/init.css') }}">
+<link rel="shortcut icon" href="../static/images/logo.png">
+<title>{% block title %} 系统登录{% endblock %} </title>
+
+{% block head %}
+<script src="../static/jquery/jquery.3.6.min.js"></script>
+<script src="../static/js/register.js"></script>
+
+<style>
+    /*#register {*/
+    /*    background: url("../static/images/bg.jpeg");*/
+    /*    background-position: 100% 100%;*/
+    /*    background-size: 100% auto;*/
+    /*}*/
+</style>
+
+{% endblock%}
+
+{%block body%}
+<div class="row mt-4">
+    <div class="col">
+
+        <p class="tip">
+            {{get_flashed_messages()[0]}}
+<!--            {% for item in get_flashed_messages() %}-->
+<!--            {{ item }}-->
+<!--            {% endfor %}-->
+        </p>
+    </div>
+    <div class="col">
+        <!--                action="#"-->
+        <form method="POST">
+            <div class="form-group">
+                <label class="label" for="exampleInputEmail1">邮箱</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                       name="email">
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleInputPassword1">密码</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">立即登录</button>
+            </div>
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+{% endblock%}

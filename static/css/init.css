@@ -1,0 +1,72 @@
+body {
+    /*#background-color: #f3f3f3;*/
+    align-items: center;
+    background-color: var(--white);
+    background: url("../images/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    /*place-items: center;*/
+}
+
+/* 提交表单的设置*/
+.form-control {
+
+    /*font-size: 20px;*/
+    /*!*height: 230px;*!*/
+    /*width: 170px;*/
+    /*!*display: block;*!*/
+    /*margin: 0 auto;*/
+    /*!*text-decoration: none;*!*/
+    /*padding: 12px 50px;*/
+    /*border-radius: 5px;*/
+    /*border: 1px solid #8fd1d1;*/
+    /*//background-color: transparent;*/
+    background-color: transparent;
+    /*text-align: center;*/
+    /*!*color: #f11a1a;*!*/
+    /*cursor: pointer;*/
+    /*position: relative;*/
+    /*left: 10px;*/
+    /*top: 320px;*/
+}
+
+/* 登录输入栏*/
+.label{
+    font-size: 22px;
+    font-style: italic;
+    color: #0b2d50;
+    /*color: #fbedc7; 金黄色*/
+     font-weight: bold;
+
+
+}
+
+/* flash 提示登录错误信息*/
+.tip{
+    font-size:22px;
+    color: red;
+    text-align: center;
+    margin: 10px;
+    margin-top: -10px;
+    position: relative;
+    left: 400px;
+    top: -100px;
+}
+
+#flash{
+    font-size:22px;
+    color: red;
+    text-align: center;
+    margin: 10px;
+    margin-top: -10px;
+    position: relative;
+    left: 400px;
+    top: -10px;
+}
+#emailHelp{
+    font-size:15px;
+}
+
