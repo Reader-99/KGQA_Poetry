@@ -26,8 +26,9 @@ class NaturalLanguageUnderstanding:
     def __init__(self, question, logger):
         self.question = question
         self.logger = logger
-        self.fasttext_model_path = './models/fasttext_model.bin'
-        self.bert_model_path = './models/bert_ner.pth'
+        # 都需要使用绝对路径，按需更改
+        self.fasttext_model_path = r'D:\KGQA_Poetry\KGQA\models\fasttext_model.bin'
+        self.bert_model_path = r'D:\KGQA_Poetry\KGQA\models\bert_ner.pth'
 
     # 1 - 问句意图分类
     def intent_classification(self):

@@ -9,7 +9,7 @@
 import os
 from pyltp import Segmentor, Postagger, Parser, NamedEntityRecognizer
 
-ltp_path = '../models/ltp_model/'  # ltp模型目录的路径
+ltp_path = 'D:/KGQA_Poetry/KGQA/models/ltp_model/'  # 需要使用绝对路径
 
 
 def cut_words(words):
