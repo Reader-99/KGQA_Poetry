@@ -10,7 +10,7 @@ from py2neo import Graph
 
 # bolt://localhost:7687  # 使用 bolt 协议传输数据更快
 graph = Graph("bolt://localhost:7687"  # "http://127.0.0.1:7474"
-              , auth=("neo4j", "9953Yyj9953"), name='poetry')  # 另一个数据库：neo4j
+              , auth=("neo4j", "******"), name='poetry')  # 根据实际情况更改用户名和密码
 
 CA_LIST = {"贾家荣国府": 0, "贾家宁国府": 1, "王家": 2, "史家": 3, "薛家": 4, "其他": 5, "林家": 6}
 similar_words = {
