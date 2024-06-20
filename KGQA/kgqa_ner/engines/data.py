@@ -22,7 +22,7 @@ class DataManager:
         # path = '/root/pointer_ner/bert-base-chinese'
 
         # 本地模型路径
-        path = r"D:\6.3 PythonCodes_PyCharm\GraduateDesign\Models\bert-base-chinese"
+        path = r'D:\KGQA_Poetry\KGQA\models\bert-base-chinese'  # 根据实际更改本地地址
 
         self.tokenizer = BertTokenizerFast.from_pretrained(path)
 

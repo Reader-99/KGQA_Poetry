@@ -12,7 +12,7 @@ class EffiGlobalPointer(nn.Module):
     def __init__(self, num_labels, device, rope=True):
         super(EffiGlobalPointer, self).__init__()
         # path = '/root/pointer_ner/bert-base-chinese'  # 服务器的模型的地址
-        path = r"D:\6.3 PythonCodes_PyCharm\GraduateDesign\Models\bert-base-chinese"
+        path = r'D:\KGQA_Poetry\KGQA\models\bert-base-chinese'  # 根据实际更改本地地址
 
         self.encoder = BertModel.from_pretrained(path)
         self.device = device

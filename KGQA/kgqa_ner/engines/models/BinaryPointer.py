@@ -16,7 +16,7 @@ class BinaryPointer(nn.Module, ABC):
         self.num_labels = num_labels
 
         # path = '/root/pointer_ner/bert-base-chinese'  #  服务器的地址
-        path = r"D:\6.3 PythonCodes_PyCharm\GraduateDesign\Models\bert-base-chinese"
+        path = r'D:\KGQA_Poetry\KGQA\models\bert-base-chinese'  # 根据实际更改本地地址
 
         self.bert_model = BertModel.from_pretrained(path)
         hidden_size = self.bert_model.config.hidden_size

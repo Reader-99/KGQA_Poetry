@@ -31,7 +31,7 @@ class Predictor:
             from engines.models.GlobalPointer import EffiGlobalPointer
             self.model = EffiGlobalPointer(num_labels=num_labels, device=device).to(device)
 
-        path = r'D:\6.3 PythonCodes_PyCharm\GraduateDesign\Models\bert_ner.pth'
+        path = r'D:\KGQA_Poetry\KGQA\models\bert_ner.pth'  # 根据实际更改
         self.model.load_state_dict(torch.load(path,  map_location=torch_device))
         self.model.eval()
 
