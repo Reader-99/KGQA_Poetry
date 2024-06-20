@@ -19,7 +19,7 @@ DB_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8mb4".format(USERNAME, PASSW
 SQLALCHEMY_DATABASE_URI = DB_URI
 
 
-# 邮箱配置  邮箱授权码：bcrizpclkxcfceag
+# 邮箱配置
 MAIL_SERVER = "smtp.qq.com"
 MAIL_USE_SSL = True
 MAIL_PORT = 465
