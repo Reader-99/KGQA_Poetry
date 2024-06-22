@@ -8,6 +8,8 @@
 
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))  # 将父文件夹加入根路径，防止导包出错
+
 import json
 import markdown
 import requests
@@ -18,7 +20,6 @@ from blueprints.prefix import bp as prefix_bp
 from flask_migrate import Migrate
 from decorators import login_required
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))  # 将父文件夹加入根路径，防止导包出错
 from flask import Flask, render_template, request, jsonify, session, g, Response  # g 全局 session, g  # g 全局
 from KGQA.kgqa_hlm.query_graph import query, get_KGQA_answer, get_answer_profile
 from KGQA.kgqa_hlm.ltp import get_target_array
